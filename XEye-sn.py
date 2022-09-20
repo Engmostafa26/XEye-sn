@@ -26,7 +26,7 @@ def snf (interf, stor):
     sc.sniff(iface=interf, store=stor, prn=paket)
 def paket(paket):
     if paket.haslayer(http.HTTPRequest):
-        httpurl = paket.haslayer[http.HTTPRequest].Host + paket.haslayer[http.HTTPRequest].Path
+        httpurl = paket[http.HTTPRequest].Host + paket[http.HTTPRequest].Path
         print("[Info] --> HTTP URL Detected: "+str(httpurl))
         if paket.haslayer(sc.Raw):
             cred = paket[sc.Raw].load
