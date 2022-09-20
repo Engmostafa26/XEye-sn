@@ -33,9 +33,9 @@ def paket(paket):
             keyws = ["uname", "username", "Username", "Email", "Emails", "email", "emails", "pass", "pasw", "id", "userid"]
             for keyw in keyws:
                 if keyw in str(cred):
-                    print("\n*************************************************************************")
+                    print("\n*****Congrats*****Congrats*****Congrats*****Congrats*****Congrats*****Congrats")
                     print(" [Congrats] --> Credintials detected in this line: --> "+str(cred))
-                    print("\n*************************************************************************")
+                    print("*****Congrats*****Congrats*****Congrats*****Congrats*****Congrats*****Congrats\n")
                     break
 def Checkroot():
     who = subprocess.check_output('whoami')
