@@ -6,9 +6,9 @@ import subprocess
 import re
 import time
 def userm():
-    print("***XEye-sn******XEye-sn******XEye-sn******XEye-sn******XEye-sn******XEye-sn***")
+    print("\n\n***XEye-sn******XEye-sn******XEye-sn******XEye-sn******XEye-sn******XEye-sn***")
     time.sleep(1)
-    print("[Welcoming] --> Welcome to the XEye Easy HTTP URLs and Credentials sniffer")
+    print("\n[Welcoming] --> Welcome to the XEye Easy HTTP URLs and Credentials sniffer")
     print("[Recommended] --> If you have any question, please contact us on our FB official page: https://www.facebook.com/XEyecs ")
     interf = input("--> [Required] --> Enter the interface for sniffing: ")
     aski = input("[Asking] --> would like to store the sniffed data? [yes(y)/no(n)] ")
@@ -26,7 +26,7 @@ def snf (interf, stor):
     sc.sniff(iface=interf, store=stor, prn=paket)
 def paket(paket):
     if paket.haslayer(http.HTTPRequest):
-        httpurl = paket.haslayer(http.HTTPRequest).Host + paket.haslayer(http.HTTPRequest).Path
+        httpurl = paket.haslayer[http.HTTPRequest].Host + paket.haslayer[http.HTTPRequest].Path
         print("[Info] --> HTTP URL Detected: "+httpurl)
         if paket.haslayer(sc.Raw):
             cred = paket[sc.Raw].load
