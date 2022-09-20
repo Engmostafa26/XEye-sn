@@ -57,7 +57,7 @@ def udte():
         time.sleep(2)
         userm()
     else:
-        print("\n[Info] --> The XEye-tp tool will be updated, please wait ...... \n")
+        print("\n[Info] --> The XEye-sn tool will be updated, please wait ...... \n")
         time.sleep(3)
         if bupted:
             print("\n[Congrats] --> XEye-sn on your machine is up to date")
