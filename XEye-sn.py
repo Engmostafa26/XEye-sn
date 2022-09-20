@@ -34,7 +34,7 @@ def paket(paket):
             for keyw in keyws:
                 if keyw in str(cred):
                     print("\n-------Congrats-------Congrats-------Congrats-------Congrats-------Congrats-------Congrats")
-                    print(" [Congrats] --> Credintials detected in this line: --> "+str(cred))
+                    print("\n [Congrats] --> Credintials detected in this line: --> "+str(cred))
                     print("\n-------Congrats-------Congrats-------Congrats-------Congrats-------Congrats-------Congrats")
                     break
 def Checkroot():
