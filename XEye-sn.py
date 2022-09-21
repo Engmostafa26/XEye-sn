@@ -70,7 +70,7 @@ def udte():
         else:
             print("\n[Warning] --> The tool couldn't be updated, please try again or reclone the tool by following the next instructions \n")
             time.sleep(3)
-            print("\n[Instruction] --> Remove the \"XEye-sn\" folder by by going up one directory by running this command \"cd ..\" ")
+            print("\n[Instruction] --> Remove the \"XEye-sn\" folder by going up one directory and by running this command \"cd ..\" ")
             print("\n[Instruction] -->  then run this cmd \"rm -rf XEye-sn\" to remove the XEye-sn folder ")
             print("\n[Instruction] --> Run this command \"git clone https://github.com/Engmostafa26/XEye-sn.git\" ")
             print(" [Assistance] --> If you need any further assistance, please contact us on our Facebook page: https://facebook.com/XEyecs")
